@@ -1,0 +1,6 @@
+READ_HTTP=0.0.0.0:6060
+WRITE_HTTP=0.0.0.0:6161
+ARCHIVE_DIR=/data/archive-server/archives
+MONGODB_SERVER=192.168.10.202:27017
+MONGODB_DB_NAME=archives
+export ARCHIVE_SERVER_OPTS="-dir=${ARCHIVE_DIR} -read-http=${READ_HTTP} -write-http=${WRITE_HTTP} -mongodb=${MONGODB_SERVER} -dbname=${MONGODB_DB_NAME}"
